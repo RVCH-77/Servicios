@@ -17,18 +17,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.145"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/untitled"
+        tools:srcCompat="@drawable/untitled" />
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Button"
+        android:backgroundTint="#CDDC39"
+        android:text="Iniciar Sesion"
+        app:iconTint="#CDDC39"
         app:layout_constraintEnd_toEndOf="@+id/txtContrasenia"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="@+id/txtContrasenia"
-        app:layout_constraintTop_toBottomOf="@+id/txtContrasenia" />
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasenia"
+        app:strokeColor="#CDDC39" />
 
     <EditText
         android:id="@+id/txtUsuario"
@@ -48,6 +52,17 @@
         android:layout_marginTop="44dp"
         android:ems="10"
         android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/txtUsuario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsuario" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="83dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="16dp"
+        android:text="contraseñia"
         app:layout_constraintEnd_toEndOf="@+id/txtUsuario"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/txtUsuario"

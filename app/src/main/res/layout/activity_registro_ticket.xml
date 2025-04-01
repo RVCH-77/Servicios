@@ -11,6 +11,7 @@
         android:id="@+id/scrollPrincipal"
         android:layout_width="409dp"
         android:layout_height="729dp"
+        android:backgroundTint="#FFFFFF"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
@@ -18,16 +19,18 @@
             android:id="@+id/la"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#F037CD"
+            android:foregroundTint="#F037CD"
             android:orientation="vertical"
             android:paddingLeft="30dp"
             android:paddingTop="15dp"
             android:paddingRight="30dp">
 
             <ImageView
-                android:id="@+id/imageResgistro"
+                android:id="@+id/imageView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/avatars" />
+                app:srcCompat="@drawable/untitled" />
 
             <TextView
                 android:id="@+id/nada"
@@ -103,12 +106,13 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btnRegistrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="90dp"
+                android:backgroundTint="#E91E63"
                 android:gravity="center"
-                android:text="Button" />
+                android:text="Ingresar" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
