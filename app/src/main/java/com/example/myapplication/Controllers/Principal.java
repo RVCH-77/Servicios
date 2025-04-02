@@ -17,6 +17,8 @@ public class Principal extends AppCompatActivity {
 
     ImageButton btnRegistroTicket;
 
+    ImageButton btnLista;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,13 @@ public class Principal extends AppCompatActivity {
         btnRegistroTicket.setOnClickListener(view -> {
             Intent registroTicket = new Intent(Principal.this, RegistroTicket.class);
             startActivity(registroTicket);
+        });
+
+        btnLista = findViewById(R.id.idLista);
+
+        btnLista.setOnClickListener(view -> {
+            Intent listaTicket = new Intent(Principal.this, lista_Ticket.class);
+            startActivity(listaTicket);
         });
 
 
