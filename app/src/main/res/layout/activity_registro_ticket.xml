@@ -15,6 +15,7 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
+
         <LinearLayout
             android:id="@+id/la"
             android:layout_width="match_parent"
@@ -26,11 +27,13 @@
             android:paddingTop="15dp"
             android:paddingRight="30dp">
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/untitled" />
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/human" />
 
             <TextView
                 android:id="@+id/nada"

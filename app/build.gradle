@@ -42,4 +42,7 @@ dependencies {
     implementation libs.gson
     implementation libs.converter.gson
     implementation(libs.glide)
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+    implementation "com.airbnb.android:lottie:6.6.4"
+
 }
